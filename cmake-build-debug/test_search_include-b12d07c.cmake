@@ -1,0 +1,5 @@
+if(EXISTS "C:/Users/Buzzlight/CLionProjects/Algorithms/cmake-build-debug/test_search_tests-b12d07c.cmake")
+  include("C:/Users/Buzzlight/CLionProjects/Algorithms/cmake-build-debug/test_search_tests-b12d07c.cmake")
+else()
+  add_test(test_search_NOT_BUILT-b12d07c test_search_NOT_BUILT-b12d07c)
+endif()
