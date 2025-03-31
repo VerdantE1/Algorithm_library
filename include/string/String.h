@@ -46,5 +46,15 @@ namespace frank{
     int minDistance(string word1, string word2);
 
 
+    /**
+    * @功能 找出字符串中第一个匹配项的下标；  s = "sadbutsad", p = "sad"  idx=0
+    * @参数 s 原始字符串
+    * @参数 p 匹配字符串
+    * @返回值 s中匹配p的第一个下标
+    * @用法 int pos = strStr(s,p)
+    * @时间复杂度 O(m+n) (m和n分别为两个字符串长度)
+    */
+    int strStr(string s, string p);
+
 }
 #endif //ALGORITHMS_STRING_H
