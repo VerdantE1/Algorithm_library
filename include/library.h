@@ -1,6 +1,7 @@
 #ifndef ALGORITHMS_LIBRARY_H
 #define ALGORITHMS_LIBRARY_H
 
-void hello();
+#include "algorithms/search.h"
+#include "string/string.h"
 
 #endif //ALGORITHMS_LIBRARY_H

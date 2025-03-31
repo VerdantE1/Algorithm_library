@@ -4,7 +4,7 @@
 
 #include <vector>
 #include "algorithms/search.h"
-namespace algorithms{
+namespace frank{
     //二分搜索算法：返回目标值的索引，如果未找到返回 -1
     int binarySearch(const std::vector<int>&nums, int target){
         int left = 0;

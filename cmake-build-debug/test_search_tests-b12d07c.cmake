@@ -1,7 +1,0 @@
-add_test( [==[Binary Search - Target Found]==] C:/Users/Buzzlight/CLionProjects/Algorithms/bin/test_search.exe [==[Binary Search - Target Found]==]  )
-set_tests_properties( [==[Binary Search - Target Found]==] PROPERTIES WORKING_DIRECTORY C:/Users/Buzzlight/CLionProjects/Algorithms/cmake-build-debug)
-add_test( [==[Binary Search - Target Not Found]==] C:/Users/Buzzlight/CLionProjects/Algorithms/bin/test_search.exe [==[Binary Search - Target Not Found]==]  )
-set_tests_properties( [==[Binary Search - Target Not Found]==] PROPERTIES WORKING_DIRECTORY C:/Users/Buzzlight/CLionProjects/Algorithms/cmake-build-debug)
-add_test( [==[Binary Search - Empty Array]==] C:/Users/Buzzlight/CLionProjects/Algorithms/bin/test_search.exe [==[Binary Search - Empty Array]==]  )
-set_tests_properties( [==[Binary Search - Empty Array]==] PROPERTIES WORKING_DIRECTORY C:/Users/Buzzlight/CLionProjects/Algorithms/cmake-build-debug)
-set( test_search_TESTS [==[Binary Search - Target Found]==] [==[Binary Search - Target Not Found]==] [==[Binary Search - Empty Array]==])
