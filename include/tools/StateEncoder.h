@@ -11,14 +11,10 @@
 
 namespace frank_tools {
 
-
+// 整数式：直接操作 int 状态
 using StateValidator = std::function<bool(const std::vector<int>&)>;
 using StateCompatChecker = std::function<bool(const std::vector<int>&, const std::vector<int>&)>;
-
-// 整数式：直接操作 int 状态
-using RawStateValidator = std::function<bool(int)>;
-using RawStateCompatChecker = std::function<bool(int,int)>;
-
+using EncodeState = int;
 
 /**
  * 通用工具类：用于状态压缩 DP 中 base-N 状态的编码、解码与合法性判断
@@ -30,7 +26,7 @@ using RawStateCompatChecker = std::function<bool(int,int)>;
     private:
         int m;      // 维度（多少位）
         int base;   // 每位可取 0~(base-1)
-        using EncodeState = int;
+
 
     public:
 
@@ -84,3 +80,29 @@ using RawStateCompatChecker = std::function<bool(int,int)>;
     };
 
 } // namespace tools
+
+
+
+
+using namespace frank_tools;
+namespace validators {
+    // 一个状态里的相邻位数不同
+    inline StateValidator adjacentDifferent = [](const std::vector<int> &digits) {
+        for (int i = 1; i < digits.size(); ++i) {
+            if (digits[i] == digits[i - 1]) return false;
+        }
+        return true;
+    };
+}
+
+
+
+
+namespace compat {
+    //两个状态的任意一个数字不能相同
+    inline StateCompatChecker noSamePosition = [](const std::vector<int>& a, const std::vector<int>& b) {
+        for (int i = 0; i < a.size(); ++i)
+            if (a[i] == b[i]) return false;
+        return true;
+    };
+}

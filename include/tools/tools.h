@@ -3,8 +3,8 @@
 //
 #ifndef ALGORITHMS_TOOLS_H
 #define ALGORITHMS_TOOLS_H
-#include "state_compression.h"
-#include "state_checkhelper.h"
+#include "StateEncoder.h"
+#include "FastStateEncoder.h"
 
 
 #endif //ALGORITHMS_TOOLS_H

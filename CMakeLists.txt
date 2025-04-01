@@ -12,8 +12,8 @@ add_library(algorithms
         src/search.cpp
         src/String.cpp
         include/tools/tools.h
-        include/tools/state_compression.h
-        include/tools/state_checkhelper.h
+        include/tools/StateEncoder.h
+        include/tools/FastStateEncoder.h
 )
 
 # 设置算法库的头文件路径
