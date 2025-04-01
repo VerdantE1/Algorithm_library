@@ -11,6 +11,9 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
 add_library(algorithms
         src/search.cpp
         src/String.cpp
+        include/tools/tools.h
+        include/tools/state_compression.h
+        include/tools/state_checkhelper.h
 )
 
 # 设置算法库的头文件路径
