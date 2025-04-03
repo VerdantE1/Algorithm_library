@@ -9,7 +9,6 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
 
 # 添加算法库
 add_library(algorithms
-        src/search.cpp
         src/String.cpp
         include/tools/tools.h
         include/tools/StateEncoder.h
