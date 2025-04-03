@@ -13,6 +13,10 @@ add_library(algorithms
         include/tools/tools.h
         include/tools/StateEncoder.h
         include/tools/FastStateEncoder.h
+        include/array/SortedArrayUtils.h
+        include/array/SortedArrayPairUtils.h
+        src/SortedArrayUtils.cpp
+        include/array/IrrgularArray.h
 )
 
 # 设置算法库的头文件路径
